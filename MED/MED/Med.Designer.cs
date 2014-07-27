@@ -32,6 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.locationGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dateGroupBox = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // peopleGroupBox
@@ -70,11 +71,21 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "People";
             // 
+            // dateGroupBox
+            // 
+            this.dateGroupBox.Location = new System.Drawing.Point(624, 12);
+            this.dateGroupBox.Name = "dateGroupBox";
+            this.dateGroupBox.Size = new System.Drawing.Size(300, 630);
+            this.dateGroupBox.TabIndex = 2;
+            this.dateGroupBox.TabStop = false;
+            this.dateGroupBox.Text = "Date && Time";
+            // 
             // Med
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 662);
+            this.Controls.Add(this.dateGroupBox);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.locationGroupBox);
             this.Controls.Add(this.groupBox1);
@@ -91,6 +102,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox locationGroupBox;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox dateGroupBox;
     }
 }
 
