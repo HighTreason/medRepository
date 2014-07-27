@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MED.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,23 @@ namespace MED
     {
         public Med()
         {
-            InitializeComponent();            
+            InitializeComponent();
+
+            populateLocationComboBox();
+        }
+
+        /// <summary>
+        /// populates the location combo box from LocationUnits enum
+        /// </summary>
+        private void populateLocationComboBox()
+        {
+            Array locationUnits = Enum.GetValues(typeof(Options.LocationUnit));
+            Array.Sort(locationUnits);
+
+            foreach (int locationUnit in locationUnits)
+            {
+                locationUnitComboBox.Items.Add((Options.LocationUnit) locationUnit);
+            }
         }        
     }
 }
