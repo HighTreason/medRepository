@@ -28,20 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.peopleGroupBox = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
-            // Form1
+            // peopleGroupBox
+            // 
+            this.peopleGroupBox.Location = new System.Drawing.Point(12, 12);
+            this.peopleGroupBox.Name = "peopleGroupBox";
+            this.peopleGroupBox.Size = new System.Drawing.Size(318, 538);
+            this.peopleGroupBox.TabIndex = 0;
+            this.peopleGroupBox.TabStop = false;
+            this.peopleGroupBox.Text = "People";
+            // 
+            // Med
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
-            this.Name = "Form1";
+            this.Controls.Add(this.peopleGroupBox);
+            this.Name = "Med";
             this.Text = "Med";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox peopleGroupBox;
     }
 }
 
