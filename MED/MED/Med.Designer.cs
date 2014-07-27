@@ -87,10 +87,11 @@
             // 
             // locationUnitComboBox
             // 
+            this.locationUnitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.locationUnitComboBox.FormattingEnabled = true;
             this.locationUnitComboBox.Location = new System.Drawing.Point(45, 29);
             this.locationUnitComboBox.Name = "locationUnitComboBox";
-            this.locationUnitComboBox.Size = new System.Drawing.Size(249, 21);
+            this.locationUnitComboBox.Size = new System.Drawing.Size(199, 21);
             this.locationUnitComboBox.TabIndex = 0;
             // 
             // locationUnitLabel
