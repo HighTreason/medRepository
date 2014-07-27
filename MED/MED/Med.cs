@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MED
 {
-    public partial class Form1 : Form
+    public partial class Med : Form
     {
-        public Form1()
+        public Med()
         {
             InitializeComponent();
         }
