@@ -22,5 +22,23 @@ namespace MED.classes
             [Description("Country")]
             Country = 3
         }
+
+        protected enum DateTimeUnit: int
+        {
+            [Description("None")]
+            None = -1,
+            [Description("Random")]
+            Random = 0,
+            [Description("Hour")]
+            Hour = 1,
+            [Description("Day")]
+            Day = 2,
+            [Description("Week")]
+            Week = 3,
+            [Description("Month")]
+            Month = 4,
+            [Description("Year")]
+            Year = 5
+        }
     }
 }
