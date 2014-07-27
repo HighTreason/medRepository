@@ -30,13 +30,15 @@
         {
             this.peopleGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.locationGroupBox = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // peopleGroupBox
             // 
             this.peopleGroupBox.Location = new System.Drawing.Point(12, 12);
             this.peopleGroupBox.Name = "peopleGroupBox";
-            this.peopleGroupBox.Size = new System.Drawing.Size(300, 538);
+            this.peopleGroupBox.Size = new System.Drawing.Size(300, 630);
             this.peopleGroupBox.TabIndex = 0;
             this.peopleGroupBox.TabStop = false;
             this.peopleGroupBox.Text = "People";
@@ -50,11 +52,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "People";
             // 
+            // locationGroupBox
+            // 
+            this.locationGroupBox.Location = new System.Drawing.Point(318, 12);
+            this.locationGroupBox.Name = "locationGroupBox";
+            this.locationGroupBox.Size = new System.Drawing.Size(300, 630);
+            this.locationGroupBox.TabIndex = 1;
+            this.locationGroupBox.TabStop = false;
+            this.locationGroupBox.Text = "Location";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(624, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(0, 0);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "People";
+            // 
             // Med
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 709);
+            this.ClientSize = new System.Drawing.Size(1008, 662);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.locationGroupBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.peopleGroupBox);
             this.Name = "Med";
@@ -67,6 +89,8 @@
 
         private System.Windows.Forms.GroupBox peopleGroupBox;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox locationGroupBox;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 
