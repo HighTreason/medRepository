@@ -33,6 +33,9 @@
             this.locationGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dateGroupBox = new System.Windows.Forms.GroupBox();
+            this.locationUnitComboBox = new System.Windows.Forms.ComboBox();
+            this.locationUnitLabel = new System.Windows.Forms.Label();
+            this.locationGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // peopleGroupBox
@@ -55,6 +58,8 @@
             // 
             // locationGroupBox
             // 
+            this.locationGroupBox.Controls.Add(this.locationUnitLabel);
+            this.locationGroupBox.Controls.Add(this.locationUnitComboBox);
             this.locationGroupBox.Location = new System.Drawing.Point(318, 12);
             this.locationGroupBox.Name = "locationGroupBox";
             this.locationGroupBox.Size = new System.Drawing.Size(300, 630);
@@ -80,6 +85,23 @@
             this.dateGroupBox.TabStop = false;
             this.dateGroupBox.Text = "Date && Time";
             // 
+            // locationUnitComboBox
+            // 
+            this.locationUnitComboBox.FormattingEnabled = true;
+            this.locationUnitComboBox.Location = new System.Drawing.Point(45, 29);
+            this.locationUnitComboBox.Name = "locationUnitComboBox";
+            this.locationUnitComboBox.Size = new System.Drawing.Size(249, 21);
+            this.locationUnitComboBox.TabIndex = 0;
+            // 
+            // locationUnitLabel
+            // 
+            this.locationUnitLabel.AutoSize = true;
+            this.locationUnitLabel.Location = new System.Drawing.Point(7, 32);
+            this.locationUnitLabel.Name = "locationUnitLabel";
+            this.locationUnitLabel.Size = new System.Drawing.Size(32, 13);
+            this.locationUnitLabel.TabIndex = 1;
+            this.locationUnitLabel.Text = "Unit :";
+            // 
             // Med
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,6 +114,8 @@
             this.Controls.Add(this.peopleGroupBox);
             this.Name = "Med";
             this.Text = "Med";
+            this.locationGroupBox.ResumeLayout(false);
+            this.locationGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -103,6 +127,8 @@
         private System.Windows.Forms.GroupBox locationGroupBox;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox dateGroupBox;
+        private System.Windows.Forms.Label locationUnitLabel;
+        private System.Windows.Forms.ComboBox locationUnitComboBox;
     }
 }
 

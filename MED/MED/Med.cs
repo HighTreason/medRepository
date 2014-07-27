@@ -14,7 +14,7 @@ namespace MED
     {
         public Med()
         {
-            InitializeComponent();
-        }
+            InitializeComponent();            
+        }        
     }
 }
