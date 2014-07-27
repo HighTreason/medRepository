@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MED.classes
 {
-    protected class Options
+    public class Options
     {
-        protected enum LocationUnit : int
+        public enum LocationUnit : int
         {
             [Description("None")]
             None = -1,
@@ -23,7 +23,7 @@ namespace MED.classes
             Country = 3
         }
 
-        protected enum DateTimeUnit: int
+        public enum DateTimeUnit: int
         {
             [Description("None")]
             None = -1,
