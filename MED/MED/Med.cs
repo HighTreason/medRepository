@@ -32,6 +32,8 @@ namespace MED
             {
                 locationUnitComboBox.Items.Add((Options.LocationUnit) locationUnit);
             }
+
+            locationUnitComboBox.SelectedIndex = 0;
         }        
     }
 }
