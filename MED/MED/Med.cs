@@ -18,6 +18,7 @@ namespace MED
             InitializeComponent();
 
             populateLocationComboBox();
+            populateDateTimeComboBox();
         }
 
         /// <summary>
@@ -34,6 +35,22 @@ namespace MED
             }
 
             locationUnitComboBox.SelectedIndex = 0;
-        }        
+        }    
+    
+        /// <summary>
+        /// populates the date & time combo box from DateTimeUnit enum
+        /// </summary>
+        private void populateDateTimeComboBox()
+        {
+            Array dateTmeUnits = Enum.GetValues(typeof(Options.DateTimeUnit));
+            Array.Sort(dateTmeUnits);
+
+            foreach (int dateTmeUnit in dateTmeUnits)
+            {
+                dateTimeComboBox.Items.Add((Options.DateTimeUnit)dateTmeUnit);
+            }
+
+            dateTimeComboBox.SelectedIndex = 0;
+        }
     }
 }

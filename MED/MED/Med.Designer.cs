@@ -35,7 +35,10 @@
             this.dateGroupBox = new System.Windows.Forms.GroupBox();
             this.locationUnitComboBox = new System.Windows.Forms.ComboBox();
             this.locationUnitLabel = new System.Windows.Forms.Label();
+            this.dateTimeComboBox = new System.Windows.Forms.ComboBox();
+            this.dateTimeUnitLabel = new System.Windows.Forms.Label();
             this.locationGroupBox.SuspendLayout();
+            this.dateGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // peopleGroupBox
@@ -78,6 +81,8 @@
             // 
             // dateGroupBox
             // 
+            this.dateGroupBox.Controls.Add(this.dateTimeUnitLabel);
+            this.dateGroupBox.Controls.Add(this.dateTimeComboBox);
             this.dateGroupBox.Location = new System.Drawing.Point(624, 12);
             this.dateGroupBox.Name = "dateGroupBox";
             this.dateGroupBox.Size = new System.Drawing.Size(300, 630);
@@ -103,6 +108,24 @@
             this.locationUnitLabel.TabIndex = 1;
             this.locationUnitLabel.Text = "Unit :";
             // 
+            // dateTimeComboBox
+            // 
+            this.dateTimeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dateTimeComboBox.FormattingEnabled = true;
+            this.dateTimeComboBox.Location = new System.Drawing.Point(44, 29);
+            this.dateTimeComboBox.Name = "dateTimeComboBox";
+            this.dateTimeComboBox.Size = new System.Drawing.Size(199, 21);
+            this.dateTimeComboBox.TabIndex = 2;
+            // 
+            // dateTimeUnitLabel
+            // 
+            this.dateTimeUnitLabel.AutoSize = true;
+            this.dateTimeUnitLabel.Location = new System.Drawing.Point(6, 32);
+            this.dateTimeUnitLabel.Name = "dateTimeUnitLabel";
+            this.dateTimeUnitLabel.Size = new System.Drawing.Size(32, 13);
+            this.dateTimeUnitLabel.TabIndex = 3;
+            this.dateTimeUnitLabel.Text = "Unit :";
+            // 
             // Med
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,6 +140,8 @@
             this.Text = "Med";
             this.locationGroupBox.ResumeLayout(false);
             this.locationGroupBox.PerformLayout();
+            this.dateGroupBox.ResumeLayout(false);
+            this.dateGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -130,6 +155,8 @@
         private System.Windows.Forms.GroupBox dateGroupBox;
         private System.Windows.Forms.Label locationUnitLabel;
         private System.Windows.Forms.ComboBox locationUnitComboBox;
+        private System.Windows.Forms.Label dateTimeUnitLabel;
+        private System.Windows.Forms.ComboBox dateTimeComboBox;
     }
 }
 
